@@ -1,0 +1,25 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "Rich Presence",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuBy-67/RPC.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "RuBy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RuBy-67/RPC/issues"
+  },
+  "homepage": "https://github.com/RuBy-67/RPC#readme",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
