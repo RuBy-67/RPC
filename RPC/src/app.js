@@ -1,4 +1,4 @@
-const clientId = "1037474717260595290";
+const clientId = " ID";
 const DiscordRPC = require("discord-rpc");
 const RPC = new DiscordRPC.Client({ transport: "ipc" });
 
@@ -21,7 +21,7 @@ async function setActivity() {
       },
       {
         label: `(Secret Button)`,
-        url: `https://www.youtube.com/watch?v=B2ElZK0u85Y&ab_channel=PMUHUB`,
+        url: `URL`,
       },
     ],
   });
