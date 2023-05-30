@@ -1,4 +1,4 @@
-const clientId = "1037474717260595290";
+const clientId = "DISCORD_ID";
 const DiscordRPC = require("discord-rpc");
 
 const images = [
@@ -134,6 +134,10 @@ const buttons = [
     label: "My Github",
     url: "https://github.com/RuBy-67",
   },
+    /*{
+    label: "Buttons 2",
+    url: "Buttons Link",
+  },*/
 ];
 
 let imageIndex = 0;
@@ -170,19 +174,14 @@ RPC.on("ready", async () => {
 });
 RPC.on("disconnected", () => {
   console.log("Disconnected from Discord");
-  // Relancer la connexion
+  // Restart connexion if is loss
   RPC.login({ clientId }).catch((err) => {
     console.error("Failed to login to Discord:", err);
-    // Gérer l'échec de la reconnexion, par exemple afficher un message d'erreur à l'utilisateur
+    // past error message in console log
   });
 });
 
 RPC.on("error", (err) => {
   console.error("Discord RPC error:", err);
-  // Gérer l'erreur, par exemple afficher un message d'erreur à l'utilisateur
-});
-
-RPC.login({ clientId }).catch((err) => {
-  console.error("Failed to login to Discord:", err);
-  // Gérer l'échec de la connexion, par exemple afficher un message d'erreur à l'utilisateur
+ 
 });
