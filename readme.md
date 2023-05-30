@@ -12,7 +12,7 @@ This project is an example of implementing Discord Rich Presence using Node.js a
 Before running the project, you need to configure a few elements.
 
 1. Create an application on the [Discord Developer Portal](https://discord.com/developers/applications).
-2. Copy the Application ID (`clientId`) and replace the value `1037474717260595290` in the code with your own ID.
+2. Copy the Application ID (`clientId`) and replace the value `DISCORD_ID` in the code with your own ID.
 3. Add the images you want to display in the `images` variable. Make sure the images are uploaded to Discord as application assets.
 4. Modify the `details` and `state` in the `texts` variable to customize the text displayed in your Rich Presence.
 5. If you want to add buttons, you can define them in the `buttons` variable by specifying the label and URL.
